@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECH TEST</title>
+    <link rel="stylesheet" href="front.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    <div class="section" id="section">
+       <header>
+        <div class="logo">
+            <img src="bgttlogo.png" alt="">
+            <h4>Tech Test</h4>
+        </div>
+        <div class="item">
+            <ul>
+                <li><a href="#home" onclick="scrollToCenter('#home')">Home</a></li>
+                <li><a href="#courses" onclick="scrollToCenter('#courses')">Take Test</a></li>
+                <li><a href="#Feedback" onclick="scrollToCenter('#Feedback')">Feedback</a></li>
+            </ul>
+        </div>
+        <div class="login" id="login">
+            <button id="loginbtn">SignIn /SignUp</button>
+        </div>
+        <div class="person" id="person">
+            <img src="profile.webp" alt="">
+            <h5 id="username">vasanth</h5>
+        </div>
+       </header>
+
+       <section id="home">
+       <div class="home">
+        <div class="content">
+            <h1>Turn your <span>Assessment </span>into success stories</h1>
+            <h3>Seamless knowledge & skills assessment solutions for insightful results. Chosen by 2.5+ M business and educational users worldwide.</h3>
+           <div class="btn">
+            <a href="#courses"><button>Try it out for Free</button></a>
+            <div class="icons">
+                <div class="element">
+                    <i class='bx bxs-right-arrow-alt'></i>
+                    <h4>No credit card required</h4>
+                </div>
+                <div class="element">
+                    <i class='bx bxs-right-arrow-alt'></i>
+                    <h4>Improve your knowledge</h4>
+                </div>
+            </div> 
+           </div>
+        </div>
+        <div class="img">
+            <img src="background.png" alt="">
+        </div>
+       </div>
+       </section>
+
+       <section class="courses" id="courses">
+        <div class="course">
+            <img src="html.jpg" alt="" height="250px" width="300px">
+            <h2>HTML</h2>
+            <div class="star">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h4>HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page. HTML consists of a series of elements</h4>
+            <div class="nextpage" id="htmlbtn">
+                <button><i class='bx bxs-right-arrow-alt'></i></button>
+            </div>
+        </div>
+        <div class="course">
+            <img src="css.webp" alt="" height="250px" width="300px">
+            <h2>CSS</h2>
+            <div class="star">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h4>There are four types of CSS containment: size, layout, style, and paint, which are set on the containe. to make a atractive web pages.</h4>
+            <div class="nextpage" id="cssbtn">
+                <button><i class='bx bxs-right-arrow-alt'></i></button>
+            </div>
+        </div>
+        <div class="course">
+            <img src="js.webp" alt="" height="250px" width="300px">
+            <h2>JAVA SCRIPT</h2>
+            <div class="star">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h4>JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty</h4>
+            <div class="nextpage" id="jsbtn">
+                <button><i class='bx bxs-right-arrow-alt'></i></button>
+            </div>
+        </div>
+        <div class="course">
+            <img src="java.jpeg" alt="" height="250px" width="300px">
+            <h2>JAVA</h2>
+            <div class="star">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <h4>Java defines the syntax and semantics of the Java programming language. This includes the basic vocabulary and rules used to write algorithms.</h4>
+            <div class="nextpage" id="javabtn">
+                <button><i class='bx bxs-right-arrow-alt'></i></button>
+            </div>
+        </div>
+       </section>
+
+       <section class="feedback" id="Feedback">
+        <h1>Feedback</h1>
+        <div class="sys">
+        <div class="wrapper">
+            <h3>Feedback About The Above Content</h3>
+            <div>
+                <div class="rating">
+                    <input type="number" name="rating" hidden>
+                    <i class='bx bx-star star' style="--i:0;"></i>
+                    <i class='bx bx-star star' style="--i:1;"></i>
+                    <i class='bx bx-star star' style="--i:2;"></i>
+                    <i class='bx bx-star star' style="--i:3;"></i>
+                    <i class='bx bx-star star' style="--i:4;"></i>
+                </div>
+                <textarea name="opinion"  rows="7" placeholder="Your opinion..." id="textarea"></textarea>
+                <div class="btn-group">
+                    <button class="btn submit" id="star">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <footer class="footer">
+        <div class="social-icons">
+            <a href=""><i class='bx bxl-instagram'></i></a>
+            <a href=""><i class='bx bxl-facebook-circle' ></i></a>
+            <a href=""><i class='bx bxl-twitter'></i></a>
+        </div>
+        <h2>&copy; 2024 <span>Tech Test</span> Website. All rights reserved.</h2>
+    </footer>
+    </div>
+
+
+    <!-- preloader for loginpage -->
+    <div class="preloader-login">
+        <div class="loader"></div>
+    </div>
+
+    <!-- login -->
+    <div class="body" id="body">
+        <div class="container" id="container">
+            <div class="form-container signup-container">
+                <form action="#" autocomplete="off" class="insign">
+                    <h1>CREATE ACCOUNT</h1>
+                    <input type="text" placeholder="Name" required id="name1">
+                    <input type="email" placeholder="E-Mail" required id="mail1">
+                    <input type="text" placeholder="Mobile-Number" required id="phoneNumber">
+                    <input type="password" name="password"  placeholder="Password" required id="password1">
+                    <div class="showpass">
+                        <input type="checkbox" name="" id="toggleCheckbox">
+                        <h5><span id="showhide">show</span> password</h5>
+                    </div>
+                    <button id="signupbtn" class="sign">Sign Up</button>
+                </form>
+            </div>
+            <div class="form-container signin-container">
+                <div class="logo-img">
+                    <img src="ttlogo.png" alt="">
+                    <h3>TECH-TEST</h3>
+                </div>
+                <form action="" autocomplete="off" class="upsign">
+                    <h1>Log In</h1>
+                    <input type="email" placeholder="E-Mail" required id="mail2">
+                    <input type="password" name="password"  placeholder="Password" required id="password2">
+                    <div class="showpasslogin" id="showpasslogin">
+                        <input type="checkbox" name="" id="toggleCheckbox1">
+                        <h5><span id="showhide1">show</span> password</h5>
+                    </div>
+                   <a href="" id="SIGNINBTN" >Log In</a>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1 class="vr"><span style="--i:1">T</span>
+                            <span style="--i:2">E</span>
+                            <span style="--i:3">C</span>
+                            <span style="--i:4">H</span>
+                            <span style="--i:5"> </span>
+                            <span style="--i:6">T</span>
+                            <span style="--i:7">E</span>
+                            <span style="--i:8">S</span>
+                            <span style="--i:9">T</span>
+                        </h1>
+                        <button class="press" id="signin">Sign In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1 class="vr">
+                            <span style="--i:1">T</span>
+                            <span style="--i:2">E</span>
+                            <span style="--i:3">C</span>
+                            <span style="--i:4">H</span>
+                            <span style="--i:5"> </span>
+                            <span style="--i:6">T</span>
+                            <span style="--i:7">E</span>
+                            <span style="--i:8">S</span>
+                            <span style="--i:9">T</span>
+                        </h1>
+                        <p class="para">Tech-Test providing you a better platform to learn,
+                            practice and preparing for getting
+                            offers in the top MNC's</p>
+                        <button class="press" id="signup">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="java" id="java">
+        <button id="backbtn"><i class='bx bx-arrow-back' ></i></button>
+        <h1>Java</h1>
+        <div class="java-container">
+            <div class="javaquiz">
+               <div class="logo">
+                <i class='bx bxl-java'></i>
+               </div>
+                <div class="javaquiz-content">
+                    <h2>Java Basics 1</h2>
+                </div>
+                <button><a href=""><i class='bx bxs-right-arrow-alt'></i></a></i></button>
+            </div>
+            <div class="javaquiz">
+                <div class="logo">
+                 <i class='bx bxl-java'></i>
+                </div>
+                 <div class="javaquiz-content">
+                     <h2>Java Basics 2</h2>
+                 </div>
+                 <button><a href=""><i class='bx bxs-right-arrow-alt'></i></a></i></button>
+             </div>
+             <div class="javaquiz">
+                <div class="logo">
+                 <i class='bx bxl-java'></i>
+                </div>
+                 <div class="javaquiz-content">
+                     <h2>Java Array</h2>
+                 </div>
+                 <button id="javabutton"><a href="quizpage.html"><i class='bx bxs-right-arrow-alt'></i></a></i></button>
+             </div>
+             <div class="javaquiz">
+                <div class="logo">
+                 <i class='bx bxl-java'></i>
+                </div>
+                 <div class="javaquiz-content">
+                     <h2>Java Strings</h2>
+                 </div>
+                 <button><a href=""><i class='bx bxs-right-arrow-alt'></i></a></i></button>
+             </div>
+             <div class="javaquiz">
+                <div class="logo">
+                 <i class='bx bxl-java'></i>
+                </div>
+                 <div class="javaquiz-content">
+                     <h2>Java OOPS 1</h2>
+                 </div>
+                 <button><a href=""><i class='bx bxs-right-arrow-alt'></i></a></i></button>
+             </div>
+             <div class="javaquiz">
+                <div class="logo">
+                 <i class='bx bxl-java'></i>
+                </div>
+                 <div class="javaquiz-content">
+                     <h2>Java OOPS 2</h2>
+                 </div>
+                 <button><a href=""><i class='bx bxs-right-arrow-alt'></i></a></i></button>
+             </div>
+             <div class="javaquiz">
+                <div class="logo">
+                 <i class='bx bxl-java'></i>
+                </div>
+                 <div class="javaquiz-content">
+                     <h2>Java Exceptions</h2>
+                 </div>
+                 <button><a href=""><i class='bx bxs-right-arrow-alt'></i></a></i></button>
+             </div>
+             <div class="javaquiz">
+                <div class="logo">
+                 <i class='bx bxl-java'></i>
+                </div>
+                 <div class="javaquiz-content">
+                     <h2>Java Threads</h2>
+                 </div>
+                 <button><a href=""><i class='bx bxs-right-arrow-alt'></i></a></i></button>
+             </div>
+             
+        </div>
+    </section>
+
+    <script src="front.js" type="module"></script>
+</body>
+</html>

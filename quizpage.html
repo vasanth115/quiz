@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA BASICS</title>
+    <link rel="stylesheet" href="quizpage.css">
+</head>
+<body>
+    <div class="container">
+        <div class="startcontainer" id="startcontainer">
+            <h3>Total Questions : <span id="qno">ㅤ</span></h3>
+            <button id="testbtn">Take Test</button>
+        </div>
+        <div class="wrapper" id="wrapper">
+            <div class="timer">
+                 <h4>Score : <span id="score">0</span></h4>
+                 <span id="timing"> <img src="clock.png" alt="" height="20px" width="20px"> <span id="time">ㅤ</span></span>
+            </div>
+              <div class="question">
+                <h2 > <span id="sno">ㅤ</span><span>)</span> <span id="question">ㅤ</span></h2>
+              </div>
+              <div class="answer">
+                <h4 id="option1" onclick="select(this.id)">ㅤ</h4>
+                <h4 id="option2" onclick="select(this.id)">ㅤ</h4>
+                <h4 id="option3" onclick="select(this.id)">ㅤ</h4>
+                <h4 id="option4" onclick="select(this.id)">ㅤ</h4>
+              </div>
+        </div>
+        <div class="scoreshow" id="scoreshow">
+          <div class="circlecontainer">
+            <div class="circular-progress">
+              <div class="value-container">0%</div>
+            </div>
+            <button id="backbtn" onclick="back()">Back</button>
+          </div>
+      
+        </div>
+    </div>
+
+    <script type="module" src="quizpage.js"></script>
+</body>
+</html>
